@@ -96,6 +96,7 @@ LGR.prototype.setLevel = function(level){
     self.level = level;
 };
 
+//does the printing of the logs
 LGR.prototype._printLog = function(data){
     var
         self = this,
@@ -172,10 +173,9 @@ LGR.prototype._getColouredData = function(){
     process.stdout.write(str);
 
     self.cursor.reset();
-
-    return;
 };
 
+//adds level with priority, color and display name
 LGR.prototype.addLevel = function(name,priority,color,display){
     var
         self            = this,
@@ -193,12 +193,15 @@ LGR.prototype.addLevel = function(name,priority,color,display){
     }
 };
 
-
+//closes the file opened
 LGR.prototype.flush = function(){
     var
         self = this;
 
-    self.toFlush.end();
+    if(self.toFlush !== undefined){
+        self.toFlush.end();
+        self.toFlush = undefined;
+    }
 };
 
 module.exports = new LGR();
