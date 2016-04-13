@@ -1,14 +1,35 @@
 {
-    "name"          : "logger",
-    "version"       : "0.0.1",
-    "description"   : "logger without event emmiters",
-    "private"       : "true",
-    "dependencies"  : {
-        "express"   : "2.5.8",
-        "lodash"    : "~3.8.0",
-        "moment"    : "~2.10.2",
-        "colors"    : "1.1.2 ",
-        "ansi"      : "0.3.1 "
-    }
-
+  "name": "logger",
+  "version": "0.0.1",
+  "description": "logger without event emmiters",
+  "private": "true",
+  "dependencies": {
+    "express": "2.5.8",
+    "lodash": "~3.8.0",
+    "moment": "~2.10.2",
+    "colors": "1.1.2 ",
+    "ansi": "0.3.1 "
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khannavidur/node_logger.git"
+  },
+  "keywords": [
+    "node",
+    "logger"
+  ],
+  "author": "khannavidur <khannavidur93@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/khannavidur/node_logger/issues"
+  },
+  "homepage": "https://github.com/khannavidur/node_logger"
 }
