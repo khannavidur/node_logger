@@ -1,12 +1,12 @@
 {
   "name": "logger",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "logger without event emmiters",
   "private": "true",
   "dependencies": {
     "express": "2.5.8",
     "lodash": "~3.8.0",
-    "moment": "~2.10.2",
+    "moment": "~2.11.2",
     "colors": "1.1.2 ",
     "ansi": "0.3.1 "
   },
